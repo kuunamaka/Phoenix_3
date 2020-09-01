@@ -13,6 +13,7 @@ defmodule RumblWeb.Router do
     plug :accepts, ["json"]
   end
 
+  # router.change1.ex
   scope "/", RumblWeb do
     pipe_through :browser
 
