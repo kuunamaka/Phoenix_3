@@ -10,7 +10,7 @@ defmodule Rumbl.Accounts.User do
   end
 
   # user.change2.ex
-  def changeset(user, attrs) do
+  def changeset(user, attrs) do # attrs = attributes
     user
     |> cast(attrs, [:name, :username])
     |> validate_required([:name, :username])
