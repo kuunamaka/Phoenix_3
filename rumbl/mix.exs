@@ -36,15 +36,16 @@ defmodule Rumbl.MixProject do
       {:phoenix, "~> 1.5.4"},
       {:phoenix_ecto, "~> 4.1"},
       {:ecto_sql, "~> 3.4"},
-      {:postgrex, ">= 0.0.0"},
+      {:postgrex, ">= 0.0.0"}, # database driver
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_dashboard, "~> 0.2"},
       {:telemetry_metrics, "~> 0.4"},
       {:telemetry_poller, "~> 0.4"},
-      {:gettext, "~> 0.11"},
+      {:gettext, "~> 0.11"}, # internationalization
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:pbkdf2_elixir, "~> 1.0"} # for managing and password hashing
     ]
   end
 
