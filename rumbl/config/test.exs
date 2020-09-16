@@ -20,3 +20,6 @@ config :rumbl, RumblWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+# test.change1.ex
+config :pbkdf2_elixir, :rounds, 1
